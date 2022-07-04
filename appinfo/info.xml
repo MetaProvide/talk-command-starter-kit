@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>talk_command_starter_kit</id>
+    <name>TalkCommandStarterKit</name>
+    <summary><![CDATA[Talk Command Starter Kit]]></summary>
+    <description><![CDATA[Talk Command Starter Kit]]></description>
+    <version>0.1.0</version>
+    <licence>agpl</licence>
+    <author mail="tech@metaprovide.org">MetaProvide</author>
+    <namespace>TalkCommandStarterKit</namespace>
+    <category>tools</category>
+    <website>https://github.com/MetaProvide/talk-command-starter-kit</website>
+    <bugs>https://github.com/MetaProvide/talk-command-starter-kit/issues</bugs>
+    <repository>https://github.com/MetaProvide/talk-command-starter-kit.git</repository>
+    <dependencies>
+        <nextcloud min-version="24" max-version="24"/>
+    </dependencies>
+    <commands>
+        <command>OCA\TalkCommandStarterKit\Command\Example</command>
+    </commands>
+</info>
