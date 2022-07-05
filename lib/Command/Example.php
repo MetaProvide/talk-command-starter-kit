@@ -35,7 +35,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Psr\Log\LoggerInterface;
 
-class Record extends Command {
+class Example extends Command {
 	/** @var IConfig */
 	private $config;
 
@@ -68,6 +68,8 @@ class Record extends Command {
 	}
 
 	protected function execute(InputInterface $input, OutputInterface $output): int {
+		$name = $input->getArgument("name");
+		$output->writeln("Hello " . $name . "!");
 		return 0;
 	}
 }
